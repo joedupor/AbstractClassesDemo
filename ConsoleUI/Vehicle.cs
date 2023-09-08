@@ -15,12 +15,13 @@ namespace ConsoleUI
 
         public string Model { get; set; } = "any model";
 
-        public void MakeEngineNoise(string engineNoise)
+        public abstract void DriveAbstract();  //this shows method with no implementation
+        
+
+        public virtual void DriveVirtual()     //this shows method with base implementation
         {
-            Console.WriteLine(engineNoise);
+            //Console.WriteLine();
         }
-
-
 
 
 
