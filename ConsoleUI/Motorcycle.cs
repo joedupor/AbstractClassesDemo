@@ -10,6 +10,11 @@ namespace ConsoleUI
     {
         public bool HasSideCart { get; set; }
 
+        public override void DriveAbstract()
+        {
+            
+        }
+
         public override void DriveVirtual()     
         {
             //Console.WriteLine();
