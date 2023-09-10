@@ -43,10 +43,10 @@ namespace ConsoleUI
              * done - Create 4 instances: 1 Car, 1 Motorcycle, and then 2 instances of type Vehicle (use explicit typing) 
              * but use constuctors from derived classes
              * 
-             * Set the properties with object initializer syntax
+             * done - Set the properties with object initializer syntax
              */
 
-            Car car1 = new Car() 
+            Car car = new Car() 
             {
                 HasTrunk = true,
                 Year = "2021",
@@ -54,7 +54,7 @@ namespace ConsoleUI
                 Model = "Focus"
             };
 
-            Motorcycle motorcycle1 = new Motorcycle() 
+            Motorcycle motorcycle = new Motorcycle() 
             {
                 HasSideCar = false,
                 Year = "2022",
@@ -78,26 +78,28 @@ namespace ConsoleUI
                 Model = "Highway King"
             };
 
-            // 5. Add the 4 vehicles to the list
+            // 5. done - Add the 4 vehicles to the list
             
-            vehicles.Add(car1);
-            vehicles.Add(motorcycle1);
+            vehicles.Add(car);
+            vehicles.Add(motorcycle);
             vehicles.Add(vehicle1);
             vehicles.Add(vehicle2);
-            
-            // 6. Using a foreach loop iterate over each of the properties
-             
+
+            // 6. done - Using a foreach loop iterate over each of the properties
+            // 7. done - Call each of the drive methods for one car and one motorcycle
+
             foreach (var vehicle in vehicles)
             {
-                //Console.WriteLine(vehicle.ToString());
                 Console.WriteLine($"Year: {vehicle.Year}");
                 Console.WriteLine($"Make: {vehicle.Make}");
                 Console.WriteLine($"Model: {vehicle.Model}");
+                vehicle.PrintInfo();
+                vehicle.DriveAbstract();
+                vehicle.DriveVirtual();
                 Console.WriteLine();
             }
 
-            // 7. Call each of the drive methods for one car and one motorcycle
-
+            
             #endregion            
             
         }

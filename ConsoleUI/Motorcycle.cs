@@ -20,6 +20,9 @@ namespace ConsoleUI
             Console.WriteLine("The motorcycle drives faster than the car!");
         }
 
-
+        public override void PrintInfo()
+        {
+            Console.WriteLine($"Has Side Car? {HasSideCar}");
+        }
     }
 }

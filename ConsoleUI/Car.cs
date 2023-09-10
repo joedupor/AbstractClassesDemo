@@ -16,9 +16,9 @@ namespace ConsoleUI
             Console.WriteLine("The car drives well!");
         }
 
-
-
-
-
+        public override void PrintInfo()
+        {
+            Console.WriteLine($"Has trunk? {HasTrunk}");
+        }
     }
 }
