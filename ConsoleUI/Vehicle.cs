@@ -20,7 +20,7 @@ namespace ConsoleUI
 
         public virtual void DriveVirtual()     //this shows method with base implementation
         {
-            //Console.WriteLine();
+            Console.WriteLine("any virtual drive");
         }
 
 
